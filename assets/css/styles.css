@@ -809,7 +809,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #d49000;
 }
 .is-content {
-  background: url(/assets/img/bg-content.png);
+  background: url(../img/bg-content.png);
 }
 .container {
   padding: 0 16px;
@@ -898,6 +898,29 @@ input[type="number"]::-webkit-outer-spin-button {
 .symptoms__content img {
   width: 100%;
 }
+.indications__title {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+.indications__description {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  white-space: pre-line;
+  color: #ffffff;
+}
 .indications__content {
   margin: 0 auto;
   max-width: 1016px;
@@ -928,7 +951,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .poisoning {
   padding-top: 40px;
   padding-bottom: 30px;
-  background-image: url(/assets/img/test.png);
+  background-image: url(../img/test.png);
   background-position: left center;
 }
 .poisoning__title {
@@ -1027,13 +1050,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .accordion-btn::before {
   position: absolute;
-  content: url(/assets/img/arrow-bg.svg);
+  content: url(../img/arrow-bg.svg);
   right: 0;
   top: 10px;
   transform: translateY(-50%);
   width: 25px;
   height: 16px;
-  /* background: url(/assets/img/arrow-bg.svg); */
+  /* background: url(../img/arrow-bg.svg); */
 }
 .faq__item + .faq__item {
   margin-top: 20px;
@@ -1122,6 +1145,37 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: green;
   margin-top: 34px;
   margin-bottom: 34px;
+  overflow: hidden;
+}
+.articles__title {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 27px;
+
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.articles__description {
+  font-family: "Franklin Gothic Book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 12px;
+
+  color: #ffffff;
+}
+.articles__more-link {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration-line: underline;
+
+  color: #ffffff;
 }
 .pagination {
   margin-top: 43px;
@@ -2339,11 +2393,10 @@ input[type="number"]::-webkit-outer-spin-button {
   background-size: 100% 108%;
 }
 .faq {
-  background-image: url(/assets/img/faq-bg.png);
+  background-image: url(../img/faq-bg.png);
 }
 .poisoning {
-  background: url(/assets/img/test.png) bottom center,
-    url(../img/bg1.png) no-repeat;
+  background: url(../img/test.png) bottom center, url(../img/bg1.png) no-repeat;
   background-size: 100% 108%;
 }
 .cases__items {
