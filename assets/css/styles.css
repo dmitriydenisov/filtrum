@@ -832,10 +832,11 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-bottom: 60px;
 }
 .first__download {
-  font-family: "Franklin Gothic Book";
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
   background: #fde414;
   border-radius: 35px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   padding: 18px 60px;
   cursor: pointer;
@@ -853,9 +854,12 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 18px 54px;
 }
 .first__buy {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+
   color: #fff;
   border-radius: 35px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   padding: 18px 60px;
   background: #de0000;
@@ -885,7 +889,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 35px;
   width: 250px;
   margin: 0 auto;
-  font-family: "Franklin Gothic Book";
+  font-family: franklinGothic, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -932,7 +936,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100%;
 }
 .indications__btn {
-  font-family: "Franklin Gothic Book";
+  font-family: franklinGothic, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1035,7 +1039,7 @@ input[type="number"]::-webkit-outer-spin-button {
   filter: drop-shadow(0px 7px 8px rgba(181, 112, 3, 0.35));
   background: #fde414;
   border-radius: 35px;
-  font-family: "Franklin Gothic Book";
+  font-family: franklinGothic, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1181,7 +1185,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-bottom: 14px;
 }
 .articles__description {
-  font-family: "Franklin Gothic Book";
+  font-family: franklinGothic, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1245,11 +1249,21 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   margin-bottom: 45px;
 }
+.article__title--mb0 {
+  margin-bottom: 0px;
+}
 .description {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .description__image {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description__img {
   flex-shrink: 0;
   border-radius: 50%;
   width: 382px;
@@ -1257,11 +1271,25 @@ input[type="number"]::-webkit-outer-spin-button {
   overflow: hidden;
   border: 2px solid #fff;
   margin-right: 22px;
+  margin-bottom: 10px;
 }
-.description__p {
-  font-family: "Franklin Gothic Book";
+.wh-265 {
+  width: 265px;
+  height: 265px;
+}
+.description__label {
+  font-family: franklinGothic, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+.description__p {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 50px;
@@ -1350,6 +1378,9 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 20px;
   text-align: center;
 }
+.risk-variables__description--article {
+  white-space: pre-line;
+}
 .effects-on-the-body__image {
   /* width: 286px;
   height: 314px; */
@@ -1363,7 +1394,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
 }
 .effects-on-the-body__p {
-  font-family: "Franklin Gothic Book";
+  font-family: franklinGothic, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1392,6 +1423,10 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   align-items: flex-end;
 }
+.treatment--mt0 {
+  margin-top: 0;
+  align-items: flex-start;
+}
 .treatment__title {
   font-family: franklinGothic, Arial, sans-serif;
   font-style: italic;
@@ -1400,23 +1435,149 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 51px;
   margin-bottom: 30px;
 }
+
 .treatment__images img {
-  width: 665px;
+  width: 640px;
+}
+.treatment__images.w460 img {
+  width: 460px;
 }
 .treatment__description {
-  width: 550px;
+  width: 635px;
   flex-shrink: 0;
 }
+.w585 {
+  width: 585px;
+}
 .treatment__text {
-  font-family: "Franklin Gothic Book";
-  font-style: normal;
-  font-weight: 400;
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 20px;
 }
 .treatment__text--white {
   white-space: pre-line;
+}
+.may-cannot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.may-cannot__items {
+  flex-shrink: 0;
+  width: 48%;
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+.may-cannot__items + .may-cannot__items {
+  position: relative;
+}
+.may-cannot__items + .may-cannot__items::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -35px;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+}
+.may-cannot__title {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.menu {
+  margin-bottom: 75px;
+}
+.menu__title {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.menu__subtitle {
+  margin-bottom: 30px;
+}
+.menu__subtitle,
+.menu__description {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.menu__list {
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+.menu__list p span {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.recipee-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.recipee-items__item {
+  display: flex;
+  width: 498px;
+  margin-bottom: 50px;
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: #ffffff;
+}
+.recipee__title {
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.recipee__img {
+  flex-shrink: 0;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #fde414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipee__p {
+  flex-shrink: 0;
+}
+.prevention {
+  column-count: 2;
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #ffffff;
+
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.prevention ol {
+  width: 590px;
+  list-style-type: decimal;
 }
 @media (min-width: 768px) {
   .container {
@@ -1437,7 +1598,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 @media (min-width: 1440px) {
   .container {
-    width: 1264px;
+    width: 1269px;
     padding: 0 64px;
   }
 }
