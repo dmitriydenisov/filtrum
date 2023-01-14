@@ -20,7 +20,7 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="is-content">
     <svg
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +114,8 @@
             </div>
           </div>
         </header>
-        <div class="main js-main">
-          <section class="main__first section info">
+        <div class="main js-main manual">
+          <section class="main__first section information">
             <div class="container">
               <div class="first-content">
                 <div class="first__description">
@@ -124,22 +124,46 @@
                     alt=""
                     class="first__title"
                   />
+                  <h2 class="first__title">Фильтрум®-СТИ</h2>
                   <p class="first__text">
                     <!-- prettier-ignore -->
                     мощный* природный
                   энтеросорбент при различных
                   отравлениях для всей семьи
                   </p>
-                  <button class="first__download">Скачать инструкцию</button>
-                  <button class="first__buy">Где купить</button>
+                  <a
+                    href="assets/files/filtrum-instruction.pdf"
+                    target="_blank"
+                    class="first__download first__download--desctop"
+                  >
+                    Скачать инструкцию
+                  </a>
+                  <a href="buy.html" class="first__buy first__buy--desctop">
+                    Где купить
+                  </a>
                 </div>
                 <div class="first__img">
-                  <img src="assets/img/filtrum.png" alt="" />
+                  <img src="assets/img/filtrum1.png" alt="" />
                 </div>
+                <a
+                  href="assets/files/filtrum-instruction.pdf"
+                  class="first__download first__download--mobile"
+                  target="_blank"
+                >
+                  Скачать инструкцию
+                </a>
+                <a href="buy.html" class="first__buy first__buy--mobile">
+                  Где купить
+                </a>
               </div>
             </div>
           </section>
           <section class="main__second section symptoms">
+            <div class="container">
+              <div class="indications__title">
+                Какие могут быть симптомы у острого отравления?
+              </div>
+            </div>
             <div class="block__text block__text--bg">
               <!-- prettier-ignore -->
               <div class="block__text-inner symptoms__title">
@@ -151,6 +175,21 @@
             </div>
             <div class="symptoms__content">
               <img src="assets/img/filtrum-sym.svg" alt="" />
+              <div class="symptoms__content--mobile">
+                <div class="container">
+                  <div class="items">
+                    <div class="items__item">Тошнота, рвота</div>
+                    <div class="items__item">Диарея (понос)</div>
+                    <div class="items__item">Вздутие живота</div>
+                    <div class="items__item">Головная боль</div>
+                    <div class="items__item">
+                      Повышенная температура (обычно от 37 до 40 градусов)
+                    </div>
+                    <div class="items__item">Потеря аппетита</div>
+                    <div class="items__item">Спазмы в животе</div>
+                  </div>
+                </div>
+              </div>
               <button class="symptoms__btn">Подробнее</button>
             </div>
           </section>
@@ -165,11 +204,47 @@
 экзогенных и эндогенных интоксикациях различного происхождения:
                 </div>
                 <div class="indications__content">
-                  <img src="assets/img/filtrum-pokaz.svg" alt="" />
+                  <img
+                    src="assets/img/filtrum-pokaz.svg"
+                    alt=""
+                    class="indications__content--desktop-img"
+                  />
+                  <img
+                    src="assets/img/filtrum1.png"
+                    alt=""
+                    class="indications__content--mobile-img"
+                  />
                 </div>
-                <button class="indications__btn">
-                  Узнайте, как работает Фильтрум®-СТИ
-                </button>
+                <div class="indications-mobile">
+                  <div class="indications-mobile__item">
+                    Острые отравления лекарственными препаратами, алкалоидами,
+                    солями тяжелых металлов, алкоголем и другими ядами
+                  </div>
+                  <div class="indications-mobile__item">
+                    Гипербилирубинемия и гиперазотемия (печеночная и почечная
+                    недостаточность)
+                  </div>
+                  <div class="indications-mobile__item">
+                    Профилактика хронических интоксикаций у работников вредных
+                    производств
+                  </div>
+                  <div class="indications-mobile__item">
+                    Пнойно-воспалительные заболевания, сопровождающиеся
+                    выраженной интоксикацией
+                  </div>
+                  <div class="indications-mobile__item">
+                    Пищевая и лекарственная аллергия
+                  </div>
+                  <div class="indications-mobile__item">
+                    Комплексное лечение пищевых токсикоинфекций, сальмонеллеза,
+                    дизентерии, диспепсии
+                  </div>
+                </div>
+                <div class="cases__btn">
+                  <div class="btn js-video-open btn--desktop">
+                    Узнайте, как работает Фильтрум®-СТИ
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -238,46 +313,46 @@
                 средства у взрослых и детей с рождения
               </div>
               <div class="container">
-                <div class="poisoning-items">
+                <div class="poisoing-items">
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-1.png" alt="" />
+                      <img src="assets/img/content/item-1.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Фаст фуд</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-2.png" alt="" />
+                      <img src="assets/img/content/item-2.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Алкоголь</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-3.png" alt="" />
+                      <img src="assets/img/content/item-3.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Вода</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-4.png" alt="" />
+                      <img src="assets/img/content/item-4.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Морепродукты</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-5.png" alt="" />
+                      <img src="assets/img/content/item-5.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Яйца</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-6.png" alt="" />
+                      <img src="assets/img/content/item-6.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Грибы</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-7.png" alt="" />
+                      <img src="assets/img/content/item-7.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">
                       Лекарственные препараты
@@ -285,25 +360,25 @@
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-8.png" alt="" />
+                      <img src="assets/img/content/item-8.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Сладкие десерты</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-9.png" alt="" />
+                      <img src="assets/img/content/item-9.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Мясные продукты</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-10.png" alt="" />
+                      <img src="assets/img/content/item-10.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Молочные продукты</div>
                   </div>
                   <div class="poisoning-items__item">
                     <div class="poisoning-items__img">
-                      <img src="assets/img/content/item-11.png" alt="" />
+                      <img src="assets/img/content/item-11.jpg" alt="" />
                     </div>
                     <div class="poisoning-items__name">Я не знаю</div>
                   </div>
