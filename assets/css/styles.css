@@ -1020,6 +1020,16 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #fff;
   margin-top: 10px;
 }
+.accordion-content p {
+  margin-bottom: 10px;
+}
+.accordion-content span {
+  font-size: 11px;
+}
+.accordion-content p span {
+  text-decoration: underline;
+  font-size: inherit;
+}
 .faq__btns {
   margin-top: 55px;
 }

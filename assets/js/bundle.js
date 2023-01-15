@@ -9013,10 +9013,12 @@ document.querySelectorAll(".accordion-btn").forEach((item) => {
 });
 
 var elem = document.querySelector(".articles__items");
-var msnry = new Masonry(elem, {
-  // options
-  itemSelector: ".articles__item",
-  columnWidth: 1,
-  gutter: ".gutter-sizer",
-  percentPosition: true,
-});
+if (elem) {
+  var msnry = new Masonry(elem, {
+    // options
+    itemSelector: ".articles__item",
+    columnWidth: 1,
+    gutter: ".gutter-sizer",
+    percentPosition: true,
+  });
+}
