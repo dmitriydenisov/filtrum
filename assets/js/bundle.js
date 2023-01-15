@@ -9017,5 +9017,6 @@ var msnry = new Masonry(elem, {
   // options
   itemSelector: ".articles__item",
   columnWidth: 1,
-  gutter: 30,
+  gutter: ".gutter-sizer",
+  percentPosition: true,
 });

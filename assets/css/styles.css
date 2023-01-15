@@ -924,7 +924,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-top: 40px;
 }
 .poisoning {
-  background: url(../img/test.png) bottom center, url(../img/bg1.png) no-repeat;
+  background: url(../img/test.png) bottom center;
   background-size: 100% 108%;
 }
 .poisoning--bg {
@@ -962,20 +962,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .poisoning-items__img {
-  position: relative;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 10px;
   width: 125px;
   height: 125px;
-  background-color: green;
   filter: drop-shadow(2px 4px 15px rgba(0, 0, 0, 0.25));
-}
-.poisoning-items__img img {
-  top: 62px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 63px;
 }
 .poisoning-items__name {
   font-family: franklinGothic, Arial, sans-serif;
@@ -1010,7 +1002,8 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #000000;
 }
 .faq {
-  padding-top: 125px;
+  /* padding-top: 125px; */
+  padding-top: 30px;
 }
 
 .accordion-content {
@@ -1018,6 +1011,14 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .faq__item.active .accordion-content {
   display: block;
+
+  font-family: franklinGothic, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  margin-top: 10px;
 }
 .faq__btns {
   margin-top: 55px;
@@ -1070,8 +1071,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .articles__description {
   font-family: franklinGothic, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-style: italic;
+  font-weight: 500;
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 12px;
@@ -1250,6 +1251,7 @@ input[type="number"]::-webkit-outer-spin-button {
   list-style-type: decimal;
 }
 .prevention ol li {
+  margin-left: 15px;
   margin-bottom: 20px;
 }
 
@@ -1281,11 +1283,17 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 1180px;
     padding: 0 48px;
   }
+  .recipee-items__item {
+    width: 494px;
+  }
 }
 @media (min-width: 1440px) {
   .container {
     width: 1269px;
     padding: 0 64px;
+  }
+  .recipee-items__item {
+    width: 494px;
   }
 }
 @media (min-width: 1600px) {
@@ -2568,7 +2576,7 @@ input[type="number"]::-webkit-outer-spin-button {
   position: absolute;
   content: url(../img/arrow-bg.svg);
   right: 0;
-  top: 10px;
+  top: 0px;
   transform: translateY(-50%);
   width: 25px;
   height: 16px;
@@ -2585,9 +2593,10 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative;
   cursor: pointer;
 }
+
 .faq__item.active .accordion-btn::before {
   transform: rotate(180deg);
-  top: 0;
+  top: -10px;
 }
 .first__buy--faq {
   width: 210px;
@@ -2848,6 +2857,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (min-width: 899px) {
+  .is-content {
+    background: url(../img/bg-content.png);
+  }
+  .wrapper {
+    background-color: inherit;
+  }
   .description {
     display: flex;
     justify-content: space-between;
@@ -2857,7 +2872,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .description__image--order {
     order: inherit;
   }
-
+  .faq {
+    padding-top: 125px;
+  }
   .description__label {
     display: block;
     font-family: franklinGothic, Arial, sans-serif;
@@ -2927,8 +2944,11 @@ input[type="number"]::-webkit-outer-spin-button {
   .treatment__images--desctop {
     display: block;
   }
+  .gutter-sizer {
+    width: 48px;
+  }
   .articles__item {
-    width: 355px;
+    width: 300px;
   }
 }
 @media (min-width: 991px) {
@@ -3000,10 +3020,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .poisoning-items__item {
     margin-right: 64px;
   }
-  .is-content,
-  .faq {
-    background: url(../img/bg-content.png);
-  }
+
   .faq__img {
     margin-bottom: 0;
   }
@@ -3016,6 +3033,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .accordion-btn {
     font-size: 24px;
+  }
+  .accordion-btn::before {
+    top: 10px;
   }
   .faq__item.active .accordion-btn::before {
     top: 10px;
@@ -3189,11 +3209,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .cases,
 .diffs,
 .use,
-.symptoms,
-.info,
-.indications {
+.info {
   background: url(../img/bg1.png) no-repeat;
   background-size: 100% 108%;
+}
+.use--nobg {
+  background: none;
 }
 
 .cases__items {
@@ -3203,7 +3224,14 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: -38px;
   margin-right: -24px;
 }
-
+@media (min-width: 1350px) {
+  .gutter-sizer {
+    width: 30px;
+  }
+  .articles__item {
+    width: 355px;
+  }
+}
 @media (max-width: 991px) {
   .cases__items {
     flex: 0 0 calc(50% - 16px);
