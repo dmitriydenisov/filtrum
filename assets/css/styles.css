@@ -935,8 +935,8 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: franklinGothic, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 41px;
-  line-height: 46px;
+  font-size: 22px;
+  line-height: 25px;
   text-align: center;
   letter-spacing: 0.01em;
 
@@ -1287,6 +1287,10 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: space-between;
     align-items: center;
   }
+  .poisoning__title {
+    font-size: 41px;
+    line-height: 46px;
+  }
 }
 @media (min-width: 1280px) {
   .container {
@@ -1556,12 +1560,16 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 230%;
+  padding-bottom: 17px;
 }
 @media (min-width: 1280px) {
   .main__first,
   .main__second,
   .main__third {
     background-size: cover;
+  }
+  .main__first {
+    padding-bottom: 0;
   }
 }
 @media (max-width: 1279px) {
@@ -2454,8 +2462,13 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0 auto;
 }
 @media (max-width: 991px) {
-  .block__text-inner {
-    padding: 0 16px;
+  .block__text-inner,
+  .indications__description,
+  .block__text {
+    padding: 0 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 120%;
   }
 }
 .first__download--desctop,
@@ -3651,9 +3664,14 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 18px;
 }
 @media (max-width: 991px) {
+  .use__age {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
   .use__text-small {
-    font-size: 25px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 1;
   }
 }
 @media (min-width: 768px) {
