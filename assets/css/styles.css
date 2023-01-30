@@ -1301,10 +1301,19 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 494px;
   }
 }
+@media (min-width: 1280px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 145px;
+  }
+}
 @media (min-width: 1440px) {
   .container {
     width: 1269px;
-    padding: 0 64px;
+    /* padding: 0 64px; */
   }
   .recipee-items__item {
     width: 494px;
@@ -1381,15 +1390,7 @@ input[type="number"]::-webkit-outer-spin-button {
     left: 0;
   }
 }
-@media (min-width: 1280px) {
-  .header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin-left: 50px;
-  }
-}
+
 @media (min-width: 1600px) {
   .header__nav {
     margin-left: 148px;
