@@ -1051,7 +1051,7 @@ input[type="number"]::-webkit-outer-spin-button {
   align-items: flex-start;
 }
 .articles__item {
-  background: rgba(253, 228, 20, 0.45);
+  background: rgba(253, 228, 20, 0.35);
   opacity: 0.75;
   border-radius: 5px;
   padding: 25px;
