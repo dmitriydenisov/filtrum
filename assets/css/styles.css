@@ -1052,7 +1052,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .articles__item {
   background: rgba(253, 228, 20, 0.35);
-  opacity: 0.75;
+  /* opacity: 0.75; */
   border-radius: 5px;
   padding: 25px;
   padding-top: 15px;
