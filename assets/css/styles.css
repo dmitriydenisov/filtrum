@@ -1272,6 +1272,15 @@ input[type="number"]::-webkit-outer-spin-button {
 .first__img img {
   max-width: 100%;
 }
+.warning_block {
+  left: 0;
+}
+.warning_center {
+  color: #000 !important;
+}
+.warning_block {
+  background: #fde414 !important;
+}
 @media (min-width: 768px) {
   .container {
     padding: 0 24px;
